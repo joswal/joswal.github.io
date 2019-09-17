@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 30px;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
@@ -78,9 +78,10 @@
 }
 
 .menu-branding .portrait {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background: url("../img/joseph adebajo.jpeg");
+  background-size: 300px 300px;
   border-radius: 50%;
   border: solid 3px #4aa5da;
 }
@@ -169,6 +170,8 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  height: 70px;
+  background: black;
 }
 
 .text-secondary {
@@ -183,7 +186,8 @@ main {
 }
 
 main .icons {
-  margin-top: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 main .icons a {
@@ -197,6 +201,7 @@ main .icons a:hover {
 
 main#home {
   overflow: hidden;
+  transition-delay: 0.5s;
 }
 
 main#home h1 {
@@ -205,6 +210,7 @@ main#home h1 {
 
 .about-info {
   display: grid;
+  margin-top: 50px;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
@@ -297,6 +303,15 @@ main#home h1 {
   height: 60px;
 }
 
+.right {
+  float: right;
+  text-align: right;
+}
+
+.trans {
+  transition: all 0.5s ease-out;
+}
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr);
@@ -307,12 +322,36 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+  .about-info {
+    margin-top: 51px;
+    display: list-item;
+    list-style: none;
+  }
+  div.icons {
+    text-align: center;
+  }
+  #tools {
+    margin-top: 50px;
+  }
+  main {
+    min-height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #description {
+    width: 57vw !important;
+    max-width: 57vw !important;
+    flex: 57vw !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center;
+    padding: 1rem;
+    min-height: auto;
   }
   main .lg-heading {
     line-height: 1;
@@ -327,26 +366,38 @@ main#home h1 {
     transform: translate3d(0, 0, 0);
   }
   .menu-nav {
-    height: 75vh;
+    height: 50vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
   .menu-branding {
-    height: 25vh;
+    height: 50vh;
     transform: translate3d(100%, 0, 0);
+    margin-top: 7px;
   }
   .menu-branding .portrait {
     background: url("../img/joseph_adebajo_small.jpg");
-    background-size: 150px 150px;
-    width: 150px;
-    height: 150px;
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
   }
   .about-info {
+    margin-top: 80px;
+    /* width: 40vw !important; */
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr;
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #tools {
+    margin-bottom: 30px;
+  }
+  #work .lg-heading {
+    margin-top: 30px;
+  }
+  #description {
+    margin-top: 2rem;
   }
 }
 
@@ -357,11 +408,77 @@ main#home h1 {
   main #home h1 {
     margin-top: 10vh;
   }
+  header {
+    height: 50px;
+  }
   main .lg-heading {
     margin-top: 1rem;
     font-size: 3rem;
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  .boxes div {
+    font-size: 1.4rem;
+    border: 2px #fff solid;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease-out;
+  }
+  ul.menu-nav.show:first-child {
+    margin-top: -12rem;
+  }
+  .menu-branding .portrait {
+    background: url("../img/joseph_adebajo_small.jpg");
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+  }
+  .menu-btn {
+    top: 15px;
+  }
+  .menu-nav {
+    height: 70vh;
+  }
+  .menu-branding {
+    height: 30vh;
+  }
+  main .icons {
+    margin-top: -0.5rem !important;
+  }
+  .about-info {
+    margin-top: 10px;
+  }
+  .about-info .bio-image {
+    width: 250px;
+    height: 250px;
+  }
+  #tools {
+    margin-top: -65px;
+  }
+  #description {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu-branding .portrait {
+    background: url("../img/joseph_adebajo_small.jpg");
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+  }
+  header {
+    height: 40px;
+  }
+  .menu-btn {
+    top: 10px;
+  }
+  main {
+    padding: 1rem;
+  }
+  .boxes div {
+    max-width: 300px;
+    word-wrap: break-word;
   }
 }

@@ -1,159 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <title>Adebajo Joseph Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Adebajo Joseph Portfolio</title>
-</head>
-
-<body id="bg-img">
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+  <body id="bg-img">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="#home" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#work" class="nav-link">
-            My Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">
-            Contact Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <main id="home">
-    <div class="row">
-      <div class="col-md-8">
-        <h3 class="lg-heading mt-5">
-          Adebajo
-          <span class="text-secondary">Joseph A.</span>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" id="homeButton">
+              About Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link" id="workButton">
+              My Work
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" id="contactButton">
+              Contact Me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <div class="row">
+        <div class="col-md-8 " id="description">
+          <h3 class="lg-heading mt-5">
+            Adebajo
+            <span class="text-secondary">Joseph A.</span>
+          </h3>
+          <h4 class="sm-heading">
+            Full-Stack Web Developer & Entrepreneur
+          </h4>
+          <div class="bio mt-5">
+            <h3 class="text-secondary mb-2">BIO</h3>
+            <p>
+              I am a lover of science, technology, lifestyle and art; an
+              adventurer and a knowledge seeker always ready to explore new
+              things while making the best experiences and this has greatly
+              affected me as a developer because everytime I design or build
+              something new, I always want to create the best experiences for
+              the people who use it.
+            </p>
+            <p>
+              <em
+                >-it's not just designs, its an experience you never forget-</em
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 about-info">
+          <img src="img/joseph adebajo.jpeg" alt="John Doe" class="bio-image" />
+          <div class="icons ">
+            <a href="https://twitter.com/adejoswal">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/joswal.adebajo">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adejoswal">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.github.com/joswal">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" id="tools">
+        <h3 class="text-secondary mt-4 mb-3">TOOLS</h3>
+        <div class="icons mt-4">
+          <a href="#">
+            <i class="fab fa-css3 fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-docker fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-git fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-html5 fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-java fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-js-square fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-node fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-npm fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-react fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-sass fa-3x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-bitbucket fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <main id="work">
+      <div class="text-center">
+        <h3 class="lg-heading">
+          My
+          <span class="text-secondary">Portfolio</span>
         </h3>
-        <h4 class="sm-heading">
-          Full-Stack Web Developer & Entrepreneur
-        </h4>
-        <div class="bio mt-5">
-          <h3 class="text-secondary mb-2">BIO</h3>
-          <p>
-            I am a lover of science, technology, lifestyle and art; an adventurer and a knowledge seeker always ready to
-            explore new things
-            while making the best experiences and this has greatly affected me as a developer because everytime I design
-            or build something new, I always want
-            to create the best experiences for the people who use it.
-          </p>
-          <p>
-            <em>-it's not just designs, its an experience you never forget-</em>
-          </p>
-        </div>
+        <h5 class="mt-4 mb-4">
+          Check out some of my projects...
+        </h5>
       </div>
-      <div class="col-md-4 about-info">
-        <img src="img/joseph adebajo.jpeg" alt="John Doe" class="bio-image">
-        <div class="icons mt-5">
-          <a href="https://twitter.com/adejoswal">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a href="https://www.facebook.com/joswal.adebajo">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/adejoswal">
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="https://www.github.com/joswal">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="text-center ">
-      <h3 class="text-secondary mt-4">TOOLS</h3>
-      <div class="icons mt-4">
-        <a href="#">
-          <i class="fab fa-css3 fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-docker fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-git fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-github fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-html5 fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-java fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-js-square fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-node fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-npm fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-react fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-sass fa-3x"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-bitbucket fa-3x"></i>
-        </a>
-      </div>
-    </div>
-  </main>
 
-  <main id="work">
-    <h3 class="lg-heading">
-      My
-      <span class="text-secondary">Portfolio</span>
-    </h3>
-    <h5 class="mt-4 mb-2">
-      Check out some of my projects...
-    </h5>
-    <div class="projects">
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/Epp mobile.png" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> EPP mobile
-        </a>
-        <a href="http://eppmobile.com/" class="btn-dark">
-          <i class="fas fa-globe"></i> Link
-        </a>
+      <div class="row p ml-1 mb-2">
+          <button class="btn btn-sm btn-secondary mr-1" type="button" id="all">all</button>
+          <button class="btn btn-sm btn-secondary mr-1" type="button" id="frontEnd">front-end</button>
+          <button class="btn btn-sm btn-secondary mr-1" type="button" id="backEnd">back-end</button>
+          <button class="btn btn-sm btn-secondary mr-1" type="button" id="fullStack">full-stack</button>
+          <button class="btn btn-sm btn-secondary" type="button" id="wordPress">wordpress</button>
       </div>
-      <div class="item">
+
+      <div class="projects">          
+        <div class="item frontend">
           <a href="#!">
-            <img src="img/projects/Neza Logistics.png" alt="Project">
+            <img src="img/projects/Epp mobile.png" alt="Project" />
+          </a>
+          <a href="#" class="btn-light">
+            <i class="fas fa-eye"></i> EPP mobile
+          </a>
+          <a href="http://eppmobile.com/" class="btn-dark">
+            <i class="fas fa-globe"></i> Link
+          </a>
+        </div>
+        <div class="item frontend">
+          <a href="#!">
+            <img src="img/projects/Neza Logistics.png" alt="Project" />
           </a>
           <a href="#" class="btn-light">
             <i class="fas fa-eye"></i> Neza Logistics
@@ -161,10 +184,10 @@
           <a href="http://nezalogistics.com/" class="btn-dark">
             <i class="fas fa-globe"></i> Link
           </a>
-      </div>
-      <div class="item">
+        </div>
+        <div class="item frontend">
           <a href="#!">
-            <img src="img/projects/project1.png" alt="Project">
+            <img src="img/projects/project1.png" alt="Project" />
           </a>
           <a href="#" class="btn-light">
             <i class="fas fa-eye"></i> Career Chooser
@@ -172,21 +195,24 @@
           <a href="https://github.com/joswal/career-chooser" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
-      </div>
-      <div class="item">
+        </div>
+        <div class="item frontend">
           <a href="#!">
-            <img src="img/projects/fcb_tribute_page.png" alt="Project">
+            <img src="img/projects/fcb_tribute_page.png" alt="Project" />
           </a>
           <a href="#" class="btn-light">
             <i class="fas fa-eye"></i>FCC tribute page Project
           </a>
-          <a href="https://github.com/joswal/fcc_projects/tree/master/responsive_web_projects/tribute_page" class="btn-dark">
+          <a
+            href="https://github.com/joswal/fcc_projects/tree/master/responsive_web_projects/tribute_page"
+            class="btn-dark"
+          >
             <i class="fab fa-github"></i> Github
           </a>
-      </div>
-      <div class="item">
+        </div>
+        <div class="item fullstack">
           <a href="#!">
-            <img src="img/projects/firebase chat.png" alt="Project">
+            <img src="img/projects/firebase chat.png" alt="Project" />
           </a>
           <a href="#" class="btn-light">
             <i class="fas fa-eye"></i> Realtime Chat
@@ -194,10 +220,10 @@
           <a href="https://github.com/joswal/RealtimeChat" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
-      </div>
-      <div class="item">
+        </div>
+        <div class="item frontend">
           <a href="#!">
-            <img src="img/projects/numbersGame.png" alt="Project">
+            <img src="img/projects/numbersGame.png" alt="Project" />
           </a>
           <a href="#" class="btn-light">
             <i class="fas fa-eye"></i> NumbersGame
@@ -205,40 +231,60 @@
           <a href="https://github.com/joswal/NumbersGame" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
-      </div>
-      <div class="item">
+        </div>
+        <div class="item backend">
           <a href="#!">
-            <img src="img/projects/Apis and MS.png" alt="Project">
+            <img src="img/projects/Apis and MS.png" alt="Project" />
           </a>
           <a href="#" class="btn-light">
             <i class="fas fa-eye"></i>Restful Apis and Web Services
           </a>
-          <a href="https://github.com/joswal/fcc_projects/tree/master/api_projects" class="btn-dark">
+          <a
+            href="https://github.com/joswal/fcc_projects/tree/master/api_projects"
+            class="btn-dark"
+          >
             <i class="fab fa-github"></i> Github
           </a>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <main id="contact">
-    <h3 class="lg-heading">
-      Contact
-      <span class="text-secondary">Me</span>
-    </h3>
-    <h4 class="">
-      Am right at your service...
-    </h4>
-    <div class="boxes">
-      <div>
-        <span class="text-secondary">Email: </span> josephade.adebajo@gmail.com
+    <main id="contact">
+      <div class="text-center">
+        <h3 class="lg-heading">
+          Contact
+          <span class="text-secondary">Me</span>
+        </h3>
+        <h4 class=" mt-2 mb-5">
+          I am right at your service...
+        </h4>
       </div>
-      <div>
-        <span class="text-secondary">Phone: </span> +234 8062467783
+      <div class="boxes">
+        <div>
+          <span class="text-secondary">Email: </span>
+          josephade.adebajo@gmail.com, digitaljossy@gmail.com
+        </div>
+        <div><span class="text-secondary">Phone: </span> +234 8062467783, +2349055775552</div>
+          <div>
+            <span class="text-secondary">Address: </span>
+           2nd floor,landmark building, km 24 lekki-epe expressway, Ajah, Lagos
+          </div>
       </div>
-    </div>
-  </main>
 
-  <script src="js/main.js"></script>
-</body>
+      <div class="card">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4568967795144!2d3.555096413473183!3d6.463655525652555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf73ec1ab8287%3A0x243cb57147898100!2sThe%20Landmark!5e0!3m2!1sen!2sng!4v1568738297850!5m2!1sen!2sng" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
 
+      <div class="right mt-5">
+          <a href="#home"><span class="btn btn-sm btn-primary trans"><i class="fas fa-angle-double-up"></i></span></a>    
+      </div>
+    </main>
+
+    <main>
+        
+    </main>
+   
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
